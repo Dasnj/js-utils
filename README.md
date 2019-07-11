@@ -16,9 +16,9 @@
 ```
 
 ## API文档
-- [Function]
-    - [debounce](./src/function/debounce.js) 防抖
-    - [throttle](./src/function/throttle.js) 节流
+- Function
+    - [debounce](./src/function/debounce.js)&emsp;&emsp;防抖
+    - [throttle](./src/function/throttle.js)&emsp;&emsp;节流
 
 ## LICENSE
 [MIT](LICENSE)
