@@ -5,17 +5,14 @@ const config = {
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'build'),
-        publicPath: '/build/',
         filename: 'js-utils.min.js'
     },
-    mode: 'production',
+    mode: 'production',  // development production
     module: {
         rules:[{
             test: /\.js$/,
             loader: 'babel-loader',
-            options: {
-                presets: ['@babel/preset-env']
-            },
+            include: '/src',
             exclude: /node_modules/
         }]
     },

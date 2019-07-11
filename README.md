@@ -1,6 +1,9 @@
 # js-utils
 前端常用代码集合
 
+## 快速使用
+js-utils.min.js
+
 ## Links
 - 浏览器兼容
   - [requestAnimationFrame](./packages/requestAnimationFrame.js)

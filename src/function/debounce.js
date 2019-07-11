@@ -3,9 +3,9 @@
  * @param {Function} callBack
  * @return {Function} fn
  */
-const debounce = function (fn, delay = 500) {
+const debounce = (fn, delay = 500) => {
   let timer
-  return function (...args) {
+  return (...args) => {
     if(timer) {
       clearTimeout(timer)
     }
