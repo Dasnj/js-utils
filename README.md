@@ -2,7 +2,7 @@
 ![JSTOOL](https://img.shields.io/badge/jstool-v1.0-blue.svg)
 ![LICENSE MIT](https://img.shields.io/badge/license-MIT-green.svg)
 
-# jstool
+# Jstool
 前端常用代码集合
 
 ## 安装使用
