@@ -5,7 +5,9 @@ const config = {
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'build'),
-        filename: 'js-utils.min.js'
+        filename: 'jstool.min.js',
+        library: 'jstool',
+        libraryTarget: 'umd'
     },
     mode: 'production',  // development production
     module: {

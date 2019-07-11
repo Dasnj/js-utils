@@ -1,5 +1,5 @@
 {
-    "name": "js-utils",
+    "name": "jstool",
     "version": "1.0.0",
     "description": "前端常用代码集合",
     "main": "./src/index.js",
@@ -8,14 +8,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Dasnj/js-utils.git"
+        "url": "git+https://github.com/Dasnj/jstool.git"
     },
     "author": "Dasnj",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/Dasnj/js-utils/issues"
+        "url": "https://github.com/Dasnj/jstool/issues"
     },
-    "homepage": "https://github.com/Dasnj/js-utils#readme",
+    "homepage": "https://github.com/Dasnj/jstool#readme",
     "devDependencies": {
         "@babel/core": "^7.5.4",
         "@babel/preset-env": "^7.5.4",

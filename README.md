@@ -1,28 +1,24 @@
-# js-utils
+![JSTOOL](https://img.shields.io/badge/build-passing-success.svg)
+![JSTOOL](https://img.shields.io/badge/jstool-v1.0-blue.svg)
+![LICENSE MIT](https://img.shields.io/badge/license-MIT-green.svg)
+
+# jstool
 前端常用代码集合
 
-## 快速使用
-js-utils.min.js
+## 安装使用
+直接下载 `bulid` 目录下的 [jstool.min.js](https://github.com/Dasnj/jstool/blob/master/build/jstool.min.js) 使用，支持UMD通用模块规范
 
-## Links
-- 浏览器兼容
-  - [requestAnimationFrame](./packages/requestAnimationFrame.js)
-- Browser properties
-
-- javascript
-
-<!-- ## Install
-```shell
-npm install cutik-vue-simple-compontent -S
+``` html
+  <script src="../jstool.min.js"></script>
+  <script>
+      jstool.api()
+  </script>
 ```
 
-## Quick Start
-```javascript
-import Vue from 'vue'
-import cutikVueSimpleCompontent from 'cutik-vue-simple-compontent'
-
-Vue.use(cutikVueSimpleCompontent)
-``` -->
+## API文档
+- [Function]
+    - [debounce](./src/function/debounce.js) 防抖
+    - [throttle](./src/function/throttle.js) 节流
 
 ## LICENSE
 [MIT](LICENSE)

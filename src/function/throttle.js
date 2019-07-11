@@ -1,30 +1,35 @@
 /**
  * @desc 节流函数
- * @param {Function} callBack
- * @return {Function} fn
+ * @param func 函数
+ * @param wait 延迟执行毫秒数
+ * @param type 1 表时间戳版，2 表定时器版
  */
-const throttle = (fn, delay = 500) => {
-  let _self = fn, //需要被延迟执行的函数引用
-    timer,
-    firstTime = true; //是否第一次调用
 
-  return () => {
-    let args = arguments;
-    if (firstTime) { //第一次调用不用延迟
-      _self.apply(this, args);
-      firstTime = false;
+const throttle = (func, wait = 500 ,type = 1) => {
+    if(type===1){
+        let previous = 0;
+    }else if(type===2){
+        let timeout;
     }
+    return function() {
+        let context = this;
+        let args = arguments;
+        if(type===1){
+            let now = Date.now();
 
-    if (timer) { //timer还在没结束前一次
-      return false;
+            if (now - previous > wait) {
+                func.apply(context, args);
+                previous = now;
+            }
+        }else if(type===2){
+            if (!timeout) {
+                timeout = setTimeout(() => {
+                    timeout = null;
+                    func.apply(context, args)
+                }, wait)
+            }
+        }
     }
-
-    timer = setTimeout(() => { //延迟执行
-      clearTimeout(timer);
-      timer = null; //手动释放timer
-      _self.apply(this, args);
-    }, delay);
-  }
-};
+}
 
 module.exports = throttle
